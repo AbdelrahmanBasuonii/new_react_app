@@ -1,3 +1,4 @@
+// Renders the shared heading block used at the top of interior pages.
 export default function PageIntro({ eyebrow, title, children }) {
   return (
     <section className="page-intro">

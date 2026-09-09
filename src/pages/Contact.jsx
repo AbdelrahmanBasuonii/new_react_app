@@ -5,11 +5,13 @@ import PageIntro from '../components/PageIntro';
 const gmailComposeUrl = 'https://mail.google.com/mail/?view=cm&fs=1&to=abdelrahmanbasuonii%40gmail.com';
 const web3FormsAccessKey = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
 
+// Renders contact links and sends the form through the configured email service.
 export default function Contact() {
   const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
   const [error, setError] = useState('');
 
+  // Submits the form to Web3Forms and reports success or the service error.
   const submitContactForm = async (event) => {
     event.preventDefault();
     setSending(true);

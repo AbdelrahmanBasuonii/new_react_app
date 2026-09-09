@@ -1,5 +1,6 @@
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
+// Presents a project summary and opens its interactive experience.
 export default function ProjectCard({ project, onClick }) {
   const Icon = project.icon;
   return (

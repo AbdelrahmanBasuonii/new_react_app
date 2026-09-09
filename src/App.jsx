@@ -8,11 +8,13 @@ import Home from './pages/Home';
 import Lab from './pages/Lab';
 import Work from './pages/Work';
 
+// Composes the portfolio shell and switches between its six client-side pages.
 export default function App() {
   const [page, setPage] = useState('home');
   const [menuOpen, setMenuOpen] = useState(false);
   const [demo, setDemo] = useState('calc');
 
+  // Changes the active page and returns the user to the top of the view.
   const navigate = (nextPage) => {
     setPage(nextPage);
     setMenuOpen(false);

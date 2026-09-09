@@ -1,10 +1,12 @@
 import { Terminal } from 'lucide-react';
 import { useState } from 'react';
 
+// Provides the interactive calculator demo and its local calculation history.
 export default function Calculator() {
   const [display, setDisplay] = useState('0');
   const [expression, setExpression] = useState('');
   const [history, setHistory] = useState([]);
+  // Applies a calculator key to the current display and expression.
   const press = (key) => {
     if (key === 'AC') { setDisplay('0'); setExpression(''); return; }
     if (key === '=') {

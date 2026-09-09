@@ -1,3 +1,4 @@
+// Selects the compact visual preview that matches a project type.
 export default function ProjectPreview({ type }) {
   if (type === 'calc') return <div className="mini-calc"><div>12 <span>× 8</span></div><section><i /><i /><i /><i /><i /><i /><i /><i /></section></div>;
   if (type === 'store') return <div className="mini-store"><div className="mini-product" /><div><b>Northstar</b><span>Objects for daily rituals</span></div></div>;

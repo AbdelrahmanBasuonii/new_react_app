@@ -2,6 +2,7 @@ import { ArrowUpRight, ChevronRight, Sparkles } from 'lucide-react';
 import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data';
 
+// Renders the landing page, introduction, and featured project cards.
 export default function Home({ navigate, setDemo }) {
   return <>
     <section className="hero page-section">
