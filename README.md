@@ -1,20 +1,80 @@
-# Fullstack Portfolio Lab
+# Abdelrahman Basuonii | Full Stack Developer Portfolio
 
-A six-page React portfolio for abdelrahman basuonii, a full stack developer. The project includes three interactive demos: a calculator, a storefront with cart and filtering, and an analytics dashboard.
+A polished six-page portfolio experience for Abdelrahman Basuonii, a full stack developer focused on building useful, clear, and reliable digital products.
 
-## Run locally
+The project combines a personal profile with three fully interactive product demonstrations: a calculator, an e-commerce storefront, and an analytics dashboard.
+
+## Highlights
+
+- Six-page client-side experience: Home, About, Selected Work, Project Lab, Dashboard, and Contact.
+- Responsive layout for desktop, tablet, and mobile screens.
+- Interactive calculator with expression history and operator handling.
+- E-commerce demo with category filters, product cards, and a working cart counter.
+- Analytics dashboard with metric cards and a responsive revenue chart.
+- Contact form prepared for automatic delivery through Web3Forms.
+- Direct links to Gmail, LinkedIn, and GitHub.
+- Reusable JSX components organized by pages, components, and shared data.
+
+## Tech stack
+
+- React
+- Vite
+- JavaScript / JSX
+- CSS
+- Lucide React icons
+- Web3Forms API for contact submissions
+
+## Getting started
+
+### Requirements
+
+- Node.js 18 or newer
+- npm
+
+### Install and run
 
 ```bash
 npm install
 npm run dev
 ```
 
+Vite will print the local development URL in the terminal.
+
 ## Contact form setup
 
-Create a `.env` file from `.env.example` and add your Web3Forms access key. The form then sends submissions automatically in the background to the configured Web3Forms email recipient. No Gmail window opens and no manual send is required.
+The contact form sends messages automatically through Web3Forms. Create an access key at [Web3Forms](https://web3forms.com/), then create a `.env` file in the project root:
 
-## Verify a production build
+```env
+VITE_WEB3FORMS_ACCESS_KEY=your_access_key_here
+```
+
+Restart the development server after changing environment variables. The `.env` file is excluded from Git so the access key is not committed.
+
+## Production build
 
 ```bash
 npm run build
+npm run preview
 ```
+
+## Project structure
+
+```text
+src/
+  components/       Shared UI and interactive demo components
+  pages/            The six portfolio pages
+  data.js           Navigation, project, and product data
+  App.jsx           Page state and application composition
+  main.jsx          React entry point
+  styles.css        Shared visual system and responsive styles
+```
+
+## Personal links
+
+- Email: abdelrahmanbasuonii@gmail.com
+- LinkedIn: https://www.linkedin.com/in/abdelrahman-basuonii-16a011267/
+- GitHub: https://github.com/AbdelrahmanBasuonii
+
+## License
+
+This portfolio is a personal project by Abdelrahman Basuonii.
