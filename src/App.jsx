@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import SiteFooter from './components/SiteFooter';
 import SiteHeader from './components/SiteHeader';
+import ChatWidget from './components/ChatWidget';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Dashboard from './pages/Dashboard';
@@ -43,6 +44,7 @@ export default function App() {
         {page === 'contact' && <Contact />}
       </main>
       <SiteFooter language={language} />
+      <ChatWidget language={language} />
     </div>
   );
 }

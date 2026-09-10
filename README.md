@@ -12,6 +12,7 @@ The project combines a personal profile with three fully interactive product dem
 - E-commerce demo with category filters, product cards, and a working cart counter.
 - Analytics dashboard with metric cards and a responsive revenue chart.
 - Contact form prepared for automatic delivery through Web3Forms.
+- Floating portfolio assistant backed by a Vercel serverless API.
 - Direct links to Gmail, LinkedIn, and GitHub.
 - Reusable JSX components organized by pages, components, and shared data.
 
@@ -49,6 +50,17 @@ VITE_WEB3FORMS_ACCESS_KEY=your_access_key_here
 ```
 
 Restart the development server after changing environment variables. The `.env` file is excluded from Git so the access key is not committed.
+
+## Portfolio assistant setup
+
+The chat UI calls `api/chat.js`. Without an AI key, it provides a small built-in FAQ fallback. To enable full AI conversations, add these server-side variables to Vercel or your local `.env` file:
+
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+OPENAI_MODEL=gpt-4o-mini
+```
+
+`OPENAI_API_KEY` is only read by the backend and is never exposed to the browser.
 
 ## Production build
 
